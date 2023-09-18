@@ -1,0 +1,40 @@
+/* Apply some basic styling to the container */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Style the form elements within the container */
+.container div {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Add some additional styles if needed */
+/* For example, you can add styles for the submit button */
+
+/* Add hover and focus styles for better user experience */
+input[type="text"]:hover,
+input[type="number"]:hover,
+input[type="email"]:hover,
+textarea:hover,
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #007bff; /* Change to your desired color */
+}
