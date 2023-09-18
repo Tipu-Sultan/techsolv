@@ -39,7 +39,7 @@
         } else {
             if (!preg_match('/^[a-zA-Z\s]+$/', $full_name)) {
                 $msg = "Enter valid Name";
-            } elseif (!preg_match('/^[0-9+()-]{10}$/', $phone) && strlen($phone) >= 10 && empty($phone)) {
+            } elseif (!preg_match('/^[0-9+()-]{10}$/', $phone) && strlen($phone) != 10 && empty($phone)) {
                 $msg = "Enter valid Phone Number";
             } else if (!preg_match('/^[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z]{2,}$/', $email)) {
                 $msg = "Enter valid Email Address";
